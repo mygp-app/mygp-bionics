@@ -4,13 +4,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      Pack Purchase
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
+  <!-- <ion-list>
     <ion-item *ngFor="let item of items">
       <ion-icon [name]="item.icon" slot="start"></ion-icon>
       {{item.title}}
@@ -18,10 +18,46 @@
         {{item.note}}
       </div>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
+  <!-- <div id="container" style="height: 300px;"></div> -->
   <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>
     </div>
   -->
+  <!-- <ion-button (click)="test()"></ion-button>
+  <ion-button (click)="test_new()">PACK</ion-button> -->
+
+  <!-- <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div id="container" style="height: 275px;"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <div id="container2" style="height: 275px;"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> -->
+  <ion-card>
+      <ion-card-header>
+          <ion-card-title>2GB 54TK Trend</ion-card-title>
+        
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #lineCanvas1></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>3GB 67TK Trend</ion-card-title>
+          
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #lineCanvas2></canvas>
+        </ion-card-content>
+      </ion-card>
+
 </ion-content>

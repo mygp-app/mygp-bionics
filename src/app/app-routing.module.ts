@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'dashboard',
     pathMatch: 'full'
   },
   {
@@ -14,7 +14,12 @@ const routes: Routes = [
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  }
+  },
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
+  { path: 'mau-progression', loadChildren: './mau-progression/mau-progression.module#MauProgressionPageModule' },
+  { path: 'revenue-trend', loadChildren: './revenue-trend/revenue-trend.module#RevenueTrendPageModule' },
+  { path: 'pack-activation', loadChildren: './pack-activation/pack-activation.module#PackActivationPageModule' },
+  { path: 'login-trend', loadChildren: './login-trend/login-trend.module#LoginTrendPageModule' }
 ];
 
 @NgModule({
